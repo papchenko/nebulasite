@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav {
+    height: calc(var(--header-height) + 1rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		&__logo {
+            color: var(--mainColor);
+            font-size: 1.8rem;
+            span {
+                color: #fff;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+		&__logo-img {
+            width: 64px;
+            height: 64px;
+        }
+		&__menu {}
+		&__list {
+            display: flex;
+            column-gap: 1.75rem;
+        }
+		&__item {}
+		&__link {
+            color: var(--title-color);
+            transition: 0.3s;
+            &:hover,
+            &.active-link {
+                background-color: var(--mainColor);
+                color: #fff;
+                padding: 0.4rem;
+                border-radius: 0.2rem;
+            }
+        }
+        &__close,
+		&__toggle {
+            display: none;
+        }
+}
+.scroll-header {
+    background-color: var(--black);
+}

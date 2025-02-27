@@ -1,0 +1,17 @@
+:root{
+    // --mainColor: #f85e00;
+    --mainColor: #ce32fc;
+    --black:#000000;
+    --white:#ffffff;
+    --whiteSmoke:#c4c3ca;
+    --header-height: 3.5rem;
+    --hue: 228;
+    --first-color: #299bab;
+    // --first-color: #14213d;
+    --title-color: #fff;
+    --text-color: hsl(var(--hue), 8%, 65%);
+    --body-color: hsl(var(--hue), 26%, 11%);
+    --container-color: hsl(var(--hue), 22%, 12%);
+    --container-color-light: hsl(var(--hue), 21%, 14%);
+    --border-color: hsl(var(--hue), 23%, 24%);
+}

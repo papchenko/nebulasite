@@ -1,0 +1,10 @@
+.row {
+    p {
+        color: var(--white);
+        text-align: center;
+        font-size: 2rem;
+        span {
+            color: var(--mainColor);
+        }
+    }
+}

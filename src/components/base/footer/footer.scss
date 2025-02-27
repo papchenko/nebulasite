@@ -1,0 +1,13 @@
+.footer {
+    &__container {
+        padding-block: 3rem;
+    }
+    &__copy {
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        a {
+            color: var(--mainColor);
+        }
+    }
+}

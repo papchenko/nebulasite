@@ -1,0 +1,20 @@
+.scrollup {
+    position: fixed;
+    right: 3rem;
+    bottom: -30%;
+    // background-color: ; set bg
+    display: inline-flex;
+    padding: 0.35rem;
+    // color: ; set color
+    font-size: 1.25rem;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 100;
+    &:hover{
+        // background-color: ; set hover bg
+        transform: translateY(-0.25rem);
+    }
+}
+.show-scroll {
+    bottom: 3rem;
+}

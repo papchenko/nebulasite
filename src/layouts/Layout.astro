@@ -1,0 +1,36 @@
+---
+import Header from '@components/base/header/header.astro';
+import Footer from '@components/base/footer/footer.astro';
+// import Scrollup from '@components/base/scrollup/scrollup.astro';
+import './main.scss';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=320, initial-scale=1.0, minimum-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="./images/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- Icons CDN -->
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<!-- <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> -->
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/> -->
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header />
+		<slot />
+		<Footer />
+		<!-- <Scrollup /> -->
+		<script src="./../js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "nebulasite",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.0.7",
+    "@astropub/icons": "^0.2.0",
+    "astro": "^5.2.6",
+    "gsap": "^3.12.7",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^11.2.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "sass": "^1.76.0",
+    "vite-plugin-browser-sync": "^4.0.0"
+  }
+}
