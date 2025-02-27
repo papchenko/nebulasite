@@ -3,8 +3,8 @@ import browserSync from 'vite-plugin-browser-sync';
 // import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://papchenko.github.io',
-  base: '/nebulasite/',
+  // site: 'https://papchenko.github.io',
+  // base: '/nebulasite/',
 
   // site: 'https://name.vercel.app',
   // output: 'server',
