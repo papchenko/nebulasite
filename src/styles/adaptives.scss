@@ -18,7 +18,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: var(--first-color);
+        background-color: var(--container-color);
         width: 400px;
         height: 100%;
         padding: 4rem 1rem;
@@ -61,6 +61,66 @@
         display: flex;
         margin: 0 auto;
      }
+     .sidebar {
+        display: none;
+     }
+     .docum__content {
+        margin: 0 10px;
+        padding: 0;
+     }
+     .sidebar {
+         &__toggle {
+             display: flex;
+             position: fixed;
+             bottom: 1rem;
+             right: 1rem;
+             font-size: 2.2rem;
+             padding: 0.8rem;
+             background-color: var(--mainColor);
+             border-radius: 50%;
+            }
+        }
+        .show-sidebar {
+        display: block;
+        position: fixed;
+        top: 7rem;
+        height: fit-content;
+        max-height: 80vh;
+        width: 300px;
+        padding: 1.8rem;
+        background-color: var(--container-color);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--mainColor) transparent;
+    }
+    .text-content {
+        font-size: 1rem;
+        a {
+            font-size: 1.2rem;
+        }
+        span {
+            font-size: 1rem;
+        }
+        .atempt {
+            font-size: 1rem;
+        }
+    }
+    .code {
+        background-color: #383636;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .code-small {
+        background-color: #383636;
+        font-size: 1rem;
+        padding: 0.5rem;
+        line-height: 3;
+    }
 }
 @media screen and (max-width: 576px) {
     .nav {

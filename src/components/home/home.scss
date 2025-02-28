@@ -1,7 +1,7 @@
 .left, .right {
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 25px;
+    padding: 25px 5px;
 }
 .home__img {
    width: 300px;
@@ -10,16 +10,19 @@
 .left {
     .line {
         &__text {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             color: var(--whiteSmoke);
+            span {
+                color: var(--mainColor);
+            }
         }
         &__description {
             padding-top: 2rem;
             p {
                 color: var(--whiteSmoke);
-                font-size: 0.9rem;
+                font-size: 1rem;
                 opacity: 0.7;
-                line-height: 1.4;
+                margin-bottom: 0.3rem;
             }
         }
     }

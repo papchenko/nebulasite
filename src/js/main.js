@@ -6,6 +6,10 @@ showMenu();
 import { headerScroll } from "./modules/headerScroll";
 headerScroll();
 
+// scroll section
+// import { scrollSectActLnk } from "./modules/scrollSectionsActiveLink";
+// scrollSectActLnk();
+
 // show scroll up
 // import { showScrollUp } from "./modules/showScrollUp";
 // showScrollUp();

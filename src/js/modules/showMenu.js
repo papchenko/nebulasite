@@ -17,11 +17,21 @@ export const showMenu = () => {
     }
 
     // remove memu mobile
-    const navLink = document.querySelectorAll('.nav-link');
+    // const navLink = document.querySelectorAll('.nav-link');
 
-    const linkAction = () => {
-        const navMenu = document.getElementById('nav-menu')
-        navMenu.classList.remove('show-menu');
+    // const linkAction = () => {
+    //     const navMenu = document.getElementById('nav-menu')
+    //     navMenu.classList.remove('show-menu');
+    // }
+    // navLink.forEach((n) => n.addEventListener('click', linkAction));
+    
+    // sidebar toggler
+    const sidebar = document.getElementById('sidebar'),
+    sidebarToggle = document.getElementById('sidebar-toggle');
+
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('show-sidebar');
+        });
     }
-    navLink.forEach((n) => n.addEventListener('click', linkAction));
 }

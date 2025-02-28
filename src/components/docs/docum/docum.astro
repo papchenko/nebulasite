@@ -1,0 +1,112 @@
+---
+import './docum.scss';
+---
+
+<section class="docum section container">
+    <div class="docum__container">
+        <div class="sidebar" id="sidebar">
+            <h3>Install</h3>
+            <a href="#download">Download</a>
+            <a href="#npn">NPM</a>
+            <h3>Deploys</h3>
+            <a href="#git">GitHub Pages</a>
+            <a href="#customgit">GitHub Pages + Custom Domain</a>
+            <a href="#vercel">Vercel</a>
+            <!-- <a href="#">Heroku</a> -->
+            <h3>Dependencies</h3>
+            <a href="#dependencies">List of installed Dependencies</a>
+            <h3>Ready Blocks</h3>
+            <!-- <a href="#">Header</a> -->
+            <!-- <a href="#scrollup">ScrollUp</a> -->
+            <h3>Dashbord</h3>
+            <a href="#dashbord">Disabled & Enabled</a>
+            <h3>Extensions (VSCode)</h3>
+            <a href="#extensions">List of Extensions</a>
+        </div>
+        <div class="sidebar__toggle" id="sidebar-toggle">
+            <i class='bx bx-sidebar'></i>
+        </div>
+        <div class="docum__items">
+            <div class="docum__content">
+                <div class="docum__content-inner" id="download">
+                    <h3 class="title-content title-content-first">Download</h3>
+                   <div class="text-content">
+                    <p>Download the archive from nebulabuild from this <a href="https://github.com/papchenko/nebulasite/raw/refs/heads/main/download/nebula.build.zip">link</a>.</p>
+                    <p>Unzip the archive into your project and use!</p>
+                   </div>
+                </div>
+                <div class="docum__content-inner" id="npm">
+                    <h3 class="title-content">NPM</h3>
+                    <div class="code">npm i nebulabuild</div>
+                    <div class="text-content">After installing the package! <br>
+                        Find the <span>nebulabuild</span> folder in the <span>node_modules</span> folder, copy it to a new project, go to this new project and install all the <p class="atempt">npm i</p> dependencies in it and run <p class="atempt">npm run dev</p>
+                        In the root of the project, create a folder <span>public/pictures</span> to put images etc.</div>
+                    </div>
+                    <div class="docum__content-inner" id="git">
+                    <h3 class="title-content">GitHub Pages</h3>
+                    <div class="text-content">
+                        <p><a href="https://docs.astro.build/en/guides/deploy/github/">Astro Documentation</a></p>
+                        <p>File settings astro.config.mjs</p>
+                        <p><span class="code-small">site: 'https://name.github.io'</span> - Your name on gitHub</p>
+                        <p><span class="code-small">base: '/reponame/'</span> - repo name</p>
+                        <p>Multipage Links</p>
+                        <span class="code-small">
+                            &lt;a href="/namerepo/"&gt;Home&lt;/a&gt; <br>
+                            &lt;a href="/namerepo/about/"&gt;About&lt;/a&gt;
+                        </span>
+                    </div>
+                </div>
+                <div class="docum__content-inner" id="customgit">
+                    <h3 class="title-content">GitHub Pages + Custom Git</h3>
+                    <div class="text-content">
+                        <p>In the project structure there is file <span>CNAME</span>, add the address of your custom domain with the prefix <div class="atempt">sub.</div> (sub.example.com)</p>
+                    </div>
+                </div>
+                <div class="docum__content-inner" id="vercel">
+                    <h3 class="title-content">Vercel</h3>
+                    <div class="text-content">
+                        <p>File settings astro.config.mjs</p>
+                        <p><span class="code-small">import vercel from '@astrojs/vercel'</span> - Import vercel</p>
+                        <p><span class="code-small">site: 'https://name.vercel.app'</span> - site name</p>
+                        <p><span class="code-small">adapter: vercel()</span> - add adapter</p>
+                        <p>Then register and log in to the site with your account <a href="http://vercel.com">Vercel</a>. select your repository and import it into project <a href="http://vercel.com">Vercel</a></p>
+                        <br>
+                        <p>Multipage Links</p>
+                        <span class="code-small">
+                            &lt;a href="/"&gt;Home&lt;/a&gt; <br>
+                            &lt;a href="about"&gt;About&lt;/a&gt;
+                        </span>
+                    </div>
+                <div class="docum__content-inner" id="dependencies">
+                    <h3 class="title-content">Dependencies</h3>
+                    <div class="text-content">
+                        <p>swiper</p>
+                        <p>gsap</p>
+                        <p>sass</p>
+                        <p>vite-plugin-browser-sync</p>
+                        <p>vercel</p>
+                        <p>scrollreveal</p>
+                    </div>
+                </div>
+                <!-- <div class="docum__content-inner" id="scrollup">
+                    <h3 class="title-content">ScrollUp</h3>
+                    <div class="text-content"></div>
+                </div> -->
+                <div class="docum__content-inner" id="dashbord">
+                    <h3 class="title-content">Disable dashbord astro (MacOS)</h3>
+                    <div class="text-content">
+                        <span class="code-small">npx astro preferences enable devToolbar</span> <br>
+                        <span class="code-small">npx astro preferences disable devToolbar</span>
+                    </div>
+                </div>
+                <div class="docum__content-inner" id="extensions">
+                    <h3 class="title-content">Extensions</h3>
+                    <div class="text-content">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode">Astro</a> <br>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=astro-build.houston">Huston (Theme)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
