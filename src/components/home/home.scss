@@ -1,7 +1,13 @@
 .left, .right {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 25px 5px;
+    // flex: 0 0 50%;
+    // max-width: 50%;
+    // padding: 25px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .home__img {
    width: 300px;
@@ -10,30 +16,23 @@
 .left {
     .line {
         &__text {
-            font-size: 1.6rem;
+            font-size: 2.4rem;
+            text-align: center;
             color: var(--whiteSmoke);
             span {
                 color: var(--mainColor);
             }
         }
-        &__description {
-            padding-top: 2rem;
-            p {
-                color: var(--whiteSmoke);
-                font-size: 1rem;
-                opacity: 0.7;
-                margin-bottom: 0.3rem;
-            }
-        }
+       
     }
 }
 
 .btn {
-    height: 34px;
+    height: 48px;
     padding: 0 30px;
     background-color: var(--mainColor);
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-flex;
@@ -51,30 +50,10 @@
         box-shadow: 0 8px 24px 0 rgba(138, 140, 146, 0.2);
     }
 }
-.tooltip {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.btn.show-tooltip .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
 .social-media {
     margin-top: 2rem;
     i {
         color: var(--white);
-        margin-right: 22px;
         font-size: 2rem;
         text-decoration: none;
         transition: 0.3s;
@@ -85,71 +64,16 @@
     }
 }
 
-.form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .right {
-    h4 {
-        font-weight: 600;
-        color: var(--white);
-    }
-    
-    h3 {
-        padding-bottom: 1rem;
-        color: var(--white);
-        font-size: 1.6rem;
-    }
-    h6 {
-        color: var(--white);
-        margin-bottom: 30px;
-        
-        span {
-            padding: 0 20px;
-            text-transform: uppercase;
-            font-weight: 700;
+    &__description {
+        margin: 1.5rem 0;
+        p {
+            color: var(--whiteSmoke);
+            font-size: 1.2rem;
+            opacity: 0.7;
+            margin-bottom: 0.6rem
         }
     }
-}
-input[type="checkbox"]{
-    display: none;
-}
-.checkbox:checked + label,
-.checkbox:not(:checked) + label{
-    position: relative;
-    display: block;
-    text-align: center;
-    width: 60px;
-    height: 16px;
-    border-radius: 8px;
-    background-color: var(--mainColor);
-    padding: 0;
-    margin: 10px auto;
-    cursor: pointer;
-}
-.checkbox:checked + label::before,
-.checkbox:not(:checked) + label::before{
-    position: absolute;
-    display: block;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    color: var(--mainColor);
-    background-color: var(--white);
-    font-family: 'Material Icons';
-    content: '';
-    z-index: 20;
-    top: -10px;
-    left: -10px;
-    line-height: 36px;
-    text-align: center;
-    font-size: 24px;
-    transition: all 0.5s ease;
-}
-.checkbox:checked + label::before{
-    transform: translateX(44px) rotate(-270deg);
 }
 .link{
     color: var(--whiteSmoke);
@@ -158,119 +82,4 @@ input[type="checkbox"]{
 }
 .link:hover{
     color: var(--mainColor);
-}
-.card-3d-wrap{
-    position: relative;
-    width: 400px;
-    max-width: 100%;
-    height: 400px;
-    margin-top: 60px;
-    transform-style: preserve-3d;
-    perspective: 800px;
-}
-.card-3d-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-style: preserve-3d;
-    transition: all 600ms ease-out;
-}
-.card-front,.card-back{
-    width: 100%;
-    height: 100%;
-    background-color: #1f1f1f;
-    position: absolute;
-    border-radius: 6px;
-    left: 0;
-    top: 0;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-}
-.card-back{
-    transform: rotateY(180deg);
-}
-.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper{
-    transform: rotateY(180deg);
-}
-.center-wrap{
-    position: absolute;
-    width: 100%;
-    padding: 0 35px;
-    top: 50%;
-    left: 0;
-    transform: translate3d(0, -50%,35px) perspective(100px);
-    display: block;
-    z-index: 20;
-    i {
-        color: #fff;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        transition: 0.3s;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-}
-.heading{
-    margin-bottom: 30px;
-    font-size: 24px;
-}
-.form-group{
-    position: relative;
-    display: block;
-    margin-bottom: 10px;
-}
-.form-style{
-    padding: 13px 20px;
-    padding-left: 55px;
-    height: 48px;
-    width: 100%;
-    font-weight: 500;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    outline: none;
-    color: var(--whiteSmoke);
-    background-color: #242323;
-    border: none;
-    box-shadow: var(--shadow);
-}
-.form-style:focus,
-.form-style:active{
-    border: none;
-    outline: none;
-    box-shadow: var(--shadow);
-}
-.input-icon{
-    top: 12px;
-    left: 18px;
-    height: 48px;
-    font-size: 24px;
-    text-align: left;
-    position: absolute;
-    color: var(--mainColor);
-    transition: all 200ms linear;
-}
-.form-group input::placeholder{
-    color: var(--whiteSmoke);
-    opacity: 0.7;
-    transition: all 200ms linear;
-}
-.form-group input:focus::placeholder{
-    opacity: 0;
-    transition: all 200ms linear;
-}
-.install {
-    padding-top: 1rem;
-    color: var(--white);
-    span {
-        color: #f77f00;
-        font-size: 1.2rem;
-    }
-    p {
-        color: #d62828;
-    }
 }

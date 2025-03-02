@@ -1,13 +1,11 @@
 .docum {
-    &__container {
-    }
     &__items {
         display: block;
         width: 100%;
     }
     &__content {
         background-color: var(--container-color);
-        padding: 2rem;
+        padding: 0.2rem 0;
         border-radius: 1rem;
         text-align: center;
         margin-left: 300px; 
@@ -51,18 +49,18 @@
     }
 }
 .text-content {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     a {
         color: var(--mainColor);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
     span {
         color: #fca311;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .atempt {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: #ef233c;
     }
 }
@@ -70,14 +68,15 @@
     background-color: #383636;
     margin: 1rem 0;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .code-small {
     background-color: #383636;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     line-height: 3;
 }
-.title-content-first {
-    padding-top: 1rem;
+.title-content {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
 }

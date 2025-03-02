@@ -4,6 +4,11 @@
     }
 }
 @media(max-width:768px) {
+    .left, .right {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 5px 0;
+    }
     .nav__logo {
         color: var(--mainColor);
         font-size: 1.2rem;
@@ -66,7 +71,7 @@
      }
      .docum__content {
         margin: 0 10px;
-        padding: 0;
+        // padding: 0.6rem 0;
      }
      .sidebar {
          &__toggle {
@@ -85,8 +90,8 @@
         position: fixed;
         top: 7rem;
         height: fit-content;
-        max-height: 80vh;
-        width: 300px;
+        max-height: 68vh;
+        width: 240px;
         padding: 1.8rem;
         background-color: var(--container-color);
         border-radius: 1rem;
@@ -97,27 +102,44 @@
         scrollbar-width: thin;
         scrollbar-color: var(--mainColor) transparent;
     }
+        .line__text {
+            font-size: 1.4rem !important;
+            color: var(--whiteSmoke);
+            span {
+                color: var(--mainColor);
+            }
+        }
+        .right__description {
+                margin: 1.5rem 0;
+                p {
+                    color: var(--whiteSmoke);
+                    font-size: 1rem;
+                    opacity: 0.6;
+                    margin-bottom: 0.6rem
+                }
+            }
     .text-content {
-        font-size: 1rem;
+        padding: 0;
+        font-size: 1.2rem;
         a {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         span {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
         .atempt {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
     .code {
         background-color: #383636;
         margin: 1rem 0;
         padding: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .code-small {
         background-color: #383636;
-        font-size: 1rem;
+        font-size: 1.2rem !important;
         padding: 0.5rem;
         line-height: 3;
     }
